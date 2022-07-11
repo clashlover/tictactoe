@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tictactoe 4X4</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid main-container">
+      <h1 id="top-header" class="f-pacifico">
+        Welcome to Multiplayer Tictactoe. You need 3 players to continue.
+      </h1>
+      <h2 id="inst-header" class="f-pacifico">Click On any block to start</h2>
+      <div class="score-board">
+        <table>
+          <tr>
+            <td class="player">Player-1</td>
+            <td class="player">Player-2</td>
+            <td class="player">Player-3</td>
+          </tr>
+          <tr>
+            <td id="score-one" class="score">0</td>
+            <td id="score-two" class="score">0</td>
+            <td id="score-three" class="score">0</td>
+          </tr>
+        </table>
+      </div>
+      <div class="button-container">
+        <p class="winning-message"></p>
+        <button id="restart" disabled>Reset</button>
+      </div>
+      <div class="play-area">
+        <div id="block_1" class="blocks"></div>
+        <div id="block_2" class="blocks"></div>
+        <div id="block_3" class="blocks"></div>
+        <div id="block_4" class="blocks"></div>
+        <div id="block_5" class="blocks"></div>
+        <div id="block_6" class="blocks"></div>
+        <div id="block_7" class="blocks"></div>
+        <div id="block_8" class="blocks"></div>
+        <div id="block_9" class="blocks"></div>
+        <div id="block_10" class="blocks"></div>
+        <div id="block_11" class="blocks"></div>
+        <div id="block_12" class="blocks"></div>
+        <div id="block_13" class="blocks"></div>
+        <div id="block_14" class="blocks"></div>
+        <div id="block_15" class="blocks"></div>
+        <div id="block_16" class="blocks"></div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

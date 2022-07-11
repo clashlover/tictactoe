@@ -1,0 +1,150 @@
+/* *Tag Section */
+
+html {
+  height: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* *Common Classes */
+.blocks {
+  border: 1px solid black;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2rem;
+}
+
+.blocks:nth-child(-n + 4) {
+  border-top: none;
+}
+
+.blocks:nth-last-of-type(-n + 4) {
+  border-bottom: none;
+}
+
+.blocks:nth-child(4n + 1) {
+  border-left: none;
+}
+
+.blocks:nth-child(4n + 4) {
+  border-right: none;
+}
+
+.blocks:hover {
+  cursor: pointer;
+  background-color: bisque;
+}
+
+.disabled:hover {
+  cursor: not-allowed;
+  background: transparent;
+}
+
+.f-pacifico {
+  font-family: "Titan One", cursive;
+}
+
+.p-turn{
+    background-color: red;
+    color: white;
+}
+
+/* *All ids and classes */
+
+.main-container {
+  margin: 0;
+  padding: 1rem 0;
+  background: linear-gradient(
+      45deg,
+      hsl(240deg 91% 64%) 0%,
+      hsl(308deg 75% 53%) 10%,
+      hsl(336deg 100% 64%) 20%,
+      hsl(11deg 100% 71%) 30%,
+      hsl(36deg 100% 68%) 40%,
+      hsl(55deg 95% 75%) 50%,
+      hsl(63deg 86% 69%) 60%,
+      hsl(70deg 90% 65%) 70%,
+      hsl(77deg 94% 61%) 80%,
+      hsl(84deg 97% 57%) 90%,
+      hsl(90deg 100% 50%) 100%
+    )
+    no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.play-area {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+#restart {
+  padding: 0.7rem 2rem;
+  border: 1px solid black;
+  background: transparent;
+  border-radius: 1.5rem;
+  /* color: black; */
+}
+
+#restart:hover:not([disabled]) {
+  background-color: black;
+  color: white;
+}
+
+.score-board table {
+  width: 70%;
+  margin: 0 auto;
+  border: 1px solid black;
+  font-size: 1.5rem;
+}
+
+.score-board table tr td {
+  padding: 1rem 2rem;
+}
+
+#top-header{
+    margin-top: 0;
+}
+
+.winning-message {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+@media only screen and (max-width: 40em) {
+  .main-container {
+    height: max-content;
+  }
+  .play-area {
+    margin-top: 2.3rem;
+  }
+  .score-board table {
+    width: 100%;
+    /* margin: 0 auto; */
+    border: 1px solid black;
+    font-size: 1.5rem;
+  }
+  .score-board table tr td {
+    padding: 1rem 1rem;
+  }
+}
+
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+    .main-container {
+        height: 100vh;
+      }
+ }
